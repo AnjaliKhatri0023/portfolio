@@ -569,6 +569,56 @@ footer {
   font-size: 0.78rem;
 }
 
+
+
+.timeline {
+  max-width: 850px;
+  margin: 40px auto 0;
+  position: relative;
+  padding-left: 30px;
+  border-left: 2px solid var(--border);
+}
+
+.timeline-item {
+  position: relative;
+  padding: 0 0 38px 25px;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -37px;
+  top: 5px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--accent);
+  border: 3px solid var(--bg);
+}
+
+.timeline-date {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--accent);
+  letter-spacing: 0.5px;
+}
+
+.timeline-item h3 {
+  margin: 9px 0 5px;
+  font-size: 1.2rem;
+}
+
+.timeline-subtitle {
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin-bottom: 10px;
+}
+
+.timeline-item p {
+  line-height: 1.7;
+  color: var(--text-secondary);
+}
+
 @media (max-width: 700px) {
   .projects-grid {
     grid-template-columns: 1fr;
