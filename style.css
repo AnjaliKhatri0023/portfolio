@@ -619,6 +619,30 @@ footer {
   color: var(--text-secondary);
 }
 
+
+
+.beyond-list {
+  max-width: 950px;
+  margin: 35px auto 0;
+  padding-left: 24px;
+}
+
+.beyond-list li {
+  padding: 0 0 20px 10px;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  font-size: 0.98rem;
+}
+
+.beyond-list li::marker {
+  color: var(--accent);
+}
+
+.beyond-list strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
 @media (max-width: 700px) {
   .projects-grid {
     grid-template-columns: 1fr;
